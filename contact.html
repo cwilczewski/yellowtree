@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Contact</title>
+    <title>Map</title>
 </head>
+
 <body>
-    
+    <!-- Menu Section -->
+    <nav>
+        <img src="" />
+        <ul>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="testimontials.html">
+                <li>Testimonials</li>
+            </a>
+            <a href="showroom.html">
+                <li>Showroom</li>
+            </a>
+            <a href="about.html">
+                <li>About</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </nav>
+
+   <!-- contact area start -->
+    <div id="contact-container">
+
+       <!-- map as header -->
+        <div id="map">
+            google map goes here
+        </div>
+
+       <!-- form -->
+        <div id="contact-form">
+            <h2>Email Us</h2>
+            <form method="post" action="MAILTO:c.wilczewski@gmail.com" id="contform">
+                <input type="text" name="fname" id="first-name" placeholder="first name" required>
+                <input type="text" name="lname" id="last-name" placeholder="last name" required>
+                <input type="email" name="email" id="email-field" placeholder="email" required>
+                <input type="tel" name="phonenum" id="phone-number" placeholder="phone number" required>
+
+                <textarea name="formtext" id="form-text" form="contform" placeholder="enter message..." required>
+
+                </textarea>
+
+                optional, attach image:
+                <input type="file" name="attachfile" id="attach">
+
+                <input type="submit" onclick="alert('check ur email chris')">
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+
+        <!-- Ambush Link -->
+        <div id="left">
+            <span>
+          2015
+           <a href="http://www.ambushdesign.com">Ambush Design Co.</a>
+           </span>
+        </div>
+
+        <!-- Social Media Links-->
+        <div id="right">
+            <span>
+               <img src="facebook" />
+               <img src="instagram" />
+               <img src="houzz" />
+           </span>
+        </div>
+    </footer>
+
 </body>
+
 </html>
