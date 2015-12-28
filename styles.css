@@ -1,0 +1,149 @@
+* {
+    font-family: Montserrat;
+    box-sizing: border-box;
+    -webkit-backface-visibility: none;
+}
+
+.clear {
+    clear: both;
+}
+
+#wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: white;
+}
+
+/* Nav */
+
+nav {
+    padding-top: 20px;
+    height: 80px;
+}
+
+nav img {
+    width: 250px;
+    float: left;
+}
+
+nav ul {
+    float: right;
+}
+
+nav li {
+    font-family: Montserrat;
+    font-size: 1.1em;
+    display: inline-block;
+    margin: 0px 20px;
+    transition: all 0.3s ease;
+}
+
+nav li:hover {
+    border-bottom: 4px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Testimonials Page */
+
+
+
+#testimonial-one {
+    max-width: 1200px;
+    position: absolute;
+    background-color: #52b9b5;
+    -webkit-clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
+    clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
+}
+
+.testimonial-one-right {
+    float: right;
+    padding: 0px 10px;
+    width:50%;
+    transform: translateY(50%);
+    color: white;
+    text-align: center;
+}
+
+.testimonial-one-left {
+    float: left;
+    width: 50%;
+}
+
+#testimonial-two {
+    max-width: 1200px;
+    position: absolute;
+    top: 350px;
+    background-color: #b95252;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 10%);
+    clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 10%);
+}
+
+.testimonial-two-right {
+    float: right;
+    width: 50%;
+}
+
+.testimonial-two-left {
+    float: left;
+    padding: 0px 10px;
+    width:50%;
+    transform: translateY(50%);
+    color: white;
+    text-align: center;
+}
+
+#testimonial-three {
+    max-width: 1200px;
+    position: absolute;
+    top: 620px;
+    background-color: #b9a152;
+    -webkit-clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
+    clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
+}
+
+.testimonial-three-right {
+    float: right;
+    padding: 0px 10px;
+    width:50%;
+    transform: translateY(50%);
+    color: white;
+    text-align: center;
+}
+
+.testimonial-three-left {
+    float: left;
+    width: 50%;
+}
+
+#testimonial-four {
+    max-width: 1200px;
+    position: absolute;
+    top:890px;
+    background-color: #52b96a;
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.testimonial-four-right {
+    float: right;
+    width: 50%;
+}
+
+.testimonial-four-left {
+    float: left;
+    padding: 0px 10px;
+    width:50%;
+    transform: translateY(50%);
+    color: white;
+    text-align: center;
+}
+
+#testimonials-footer {
+    position: relative;
+    top: 100%;
+}
