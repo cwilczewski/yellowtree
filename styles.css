@@ -368,8 +368,41 @@ footer {
     text-align: center;
 }
 
-/*
-#testimonials-footer {
-    position: relative;
-    top: 100%;
-}*/
+/*SHOWROOM SECTION*/
+
+#showroom-hero{
+    background-image: url(images/hero-placeholder.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%)
+    height: 500px;
+}
+
+.info-sections h2 {
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+#size {
+    text-align: right;
+    color: white;
+    height: 250px;
+    max-width: 1200px;
+    background-color: #9b8b74;
+    -webkit-clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
+    clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
+}
+
+#size h2,
+#size p {
+    transform: translateY(40px)
+}
+
+#size h2{
+    margin-right: 20px;
+}
+
+#size p{
+    padding-right: 20px;
+}
