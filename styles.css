@@ -57,7 +57,7 @@ nav a {
 
 /* footer */
 footer {
-    position: fixed;
+    padding-top: 10px;
     width: 100%;
     bottom: 0px;
     background-color: white;/*jus fo now*/
