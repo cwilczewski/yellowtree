@@ -10,7 +10,7 @@
 
 #wrapper {
     margin: 0 auto;
-    max-width: 1200px;
+
     background-color: white;
 }
 
@@ -278,95 +278,63 @@ footer {
 
 
 #testimonial-one {
-    max-width: 1200px;
-    position: absolute;
     background-color: #52b9b5;
     -webkit-clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
     clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
 }
 
-.testimonial-one-right {
-    float: right;
-    padding: 0px 10px;
-    width:50%;
-    transform: translateY(50%);
-    color: white;
-    text-align: center;
-}
-
-.testimonial-one-left {
-    float: left;
-    width: 50%;
-}
-
 #testimonial-two {
-    max-width: 1200px;
-    position: absolute;
-    top: 350px;
+    margin-top: -2.8%;
     background-color: #b95252;
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 10%);
-    clip-path: polygon(100% 0, 100% 100%, 0 90%, 0 10%);
-}
-
-.testimonial-two-right {
-    float: right;
-    width: 50%;
-}
-
-.testimonial-two-left {
-    float: left;
-    padding: 0px 10px;
-    width:50%;
-    transform: translateY(50%);
-    color: white;
-    text-align: center;
+    -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
 
 #testimonial-three {
-    max-width: 1200px;
-    position: absolute;
-    top: 620px;
+    margin-top: -2.8%;
     background-color: #b9a152;
     -webkit-clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
     clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
 }
 
-.testimonial-three-right {
-    float: right;
-    padding: 0px 10px;
-    width:50%;
-    transform: translateY(50%);
-    color: white;
-    text-align: center;
-}
-
-.testimonial-three-left {
-    float: left;
-    width: 50%;
-}
-
 #testimonial-four {
-    max-width: 1200px;
-    position: absolute;
-    top:890px;
+    margin-top: -2.8%;
     background-color: #52b96a;
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
 
-.testimonial-four-right {
+.testimonial-one-right,
+.testimonial-three-right {
     float: right;
-    width: 50%;
-}
-
-.testimonial-four-left {
-    float: left;
-    padding: 0px 10px;
+    padding: 0px 150px;
     width:50%;
-    transform: translateY(50%);
+    transform: translateY(100%);
     color: white;
     text-align: center;
 }
+
+.testimonial-two-left,
+.testimonial-four-left {
+    float: left;
+    padding: 0px 150px;
+    width:50%;
+    transform: translateY(100%);
+    color: white;
+    text-align: center;
+}
+
+.testimonial-one-left,
+.testimonial-three-left {
+    width: 50%;
+}
+
+.testimonial-two-right,
+.testimonial-four-right {
+    width: 50%;
+}
+
+
 
 /*SHOWROOM SECTION*/
 
