@@ -9,12 +9,6 @@
     clear: both;
 }
 
-#wrapper {
-    margin: 0 auto;
-    max-width: 1200px;
-    background-color: white;
-}
-
 ul {
     list-style: none;
 }
