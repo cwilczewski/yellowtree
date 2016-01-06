@@ -1,12 +1,12 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
-<defs>
-    <style>.cls-1{fill:#52b9b5;}.cls-2{fill:#fff;}</style>
-</defs>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#52B9B5;}
+</style>
 <title>houze</title>
-<circle class="cls-1" cx="24" cy="24" r="24"/>
-<polygon class="cls-2" points="14.84 22.81 14.84 13.17 23.1 8.29 23.1 18.1 14.84 22.81"/>
-<polygon class="cls-2" points="23.1 28.4 23.1 19.43 15.43 23.92 23.1 28.4"/>
-<polygon class="cls-2" points="14.84 24.98 14.84 34.16 22.65 29.57 14.84 24.98"/>
-<polygon class="cls-2" points="24.4 19.43 24.4 28.4 32.28 24.02 24.4 19.43"/>
-<polygon class="cls-2" points="32.87 13.97 32.87 22.94 24.98 18.45 32.87 13.97"/>
-<polygon class="cls-2" points="32.87 25.19 32.87 34.91 24.4 39.71 24.4 29.9 32.87 25.19"/></svg>
+<path class="st0" d="M24,0C10.7,0,0,10.7,0,24s10.7,24,24,24s24-10.7,24-24S37.3,0,24,0z M14.8,34.2V25l7.8,4.6L14.8,34.2z
+	 M23.1,28.4l-7.7-4.5l7.7-4.5V28.4z M23.1,18.1l-8.3,4.7v-9.6l8.3-4.9V18.1z M24.4,19.4l7.9,4.6l-7.9,4.4V19.4z M32.9,34.9l-8.5,4.8
+	v-9.8l8.5-4.7V34.9z M32.9,22.9L25,18.5l7.9-4.5V22.9z"/>
+</svg>
