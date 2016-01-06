@@ -22,12 +22,12 @@ ul {
 /* Nav */
 
 nav {
-    padding-top: 20px;
+    padding-top: 10px;
     height: 100px;
     position: relative;
     z-index: 9999999999999;
     background-color: white;/*jus fo now*/
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 70%);
     clip-path: polygon(0 0, 100% 0, 100% 26%, 0 0);
     
 }
@@ -47,7 +47,7 @@ nav li {
     font-family: Montserrat;
     font-size: 1.1em;
     display: inline-block;
-    margin: 0px 20px;
+    margin: 10px 10px;
     transition: all 0.3s ease;
 }
 
