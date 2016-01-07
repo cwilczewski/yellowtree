@@ -12,7 +12,12 @@ ul {
     list-style: none;
 }
 
-/* Nav */
+#page-container {
+    position: absolute;
+    top: 70px;
+}
+
+/* Nav Styles */
 
 nav {
     padding-top: 10px;
@@ -56,7 +61,8 @@ nav a {
     color: black;
 }
 
-/* footer */
+/* Footer Styles */
+
 footer {
     position: absolute;
     width: 100%;
@@ -122,10 +128,6 @@ footer #right .img-div {
 
 footer #right a {
     text-decoration: none;
-}
-
-.facebook {
-    fill: black;
 }
 
 /* Oi look m8, it's a slideshow */
@@ -332,10 +334,6 @@ footer #right a {
 
 /* Testimonials Page */
 
-#page-container {
-    position: absolute;
-    top: 70px;
-}
 
 #testimonial-one {
     height: 400px;
@@ -349,7 +347,7 @@ footer #right a {
 
 #testimonial-three {
     height: 400px;
-     background-color: #52b9b5;
+    background-color: #52b9b5;
 }
 
 #testimonial-four {
@@ -360,72 +358,72 @@ footer #right a {
 .testimonial-one-right,
 .testimonial-three-right {
     float: right;
+    height: 100%; 
+    width: 45%;
     padding-top: 7%;
     padding-left: 5%;
     padding-right: 5%;
-    width: 45%;
     color: white;
     text-align: center;
-    height: 100%; 
 }
 
 .testimonial-two-left,
 .testimonial-four-left {
     float: left;
+    height: 100%;
+    width: 45%;
     padding-top: 7%;
     padding-left: 5%;
     padding-right: 5%;
-    width: 45%;
     color: white;
     text-align: center;
-    height: 100%;
 }
 
 .testimonial-one-left,
 .testimonial-three-left {
-    width: 50%;
     height: 100%;
+    width: 50%;
     -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
     clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
 }
 
 .testimonial-two-right,
 .testimonial-four-right {
-    width: 55%;
     height: 100%;
+    width: 55%;
     -webkit-clip-path: polygon(9.2% 0, 100% 0, 100% 100%, 0 100%);
-clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 }
 
 /*SHOWROOM SECTION*/
 
 #showroom-hero{
+    height: 500px;
     background-image: url(images/hero-placeholder.jpg);
     background-size: cover;
     background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-    height: 300px;
 }
 
 .info-sections h2{
+    margin: 0% 20%;
+    padding-top: 120px;
+    padding-bottom: 10px;
     color: #232323;
     font-size: 3em;
     text-decoration: underline;
-    padding-top: 120px;
-    padding-bottom: 10px;
-    margin: 0% 20%;
 }
 
 .info-sections p{
-    color: #232323;
     margin: 0% 20%;
     padding-bottom: 120px;
+    color: #232323;
 }
 
 #size {
-    text-align: right;
     background-color: #9b8b74;
+    text-align: right;
     -webkit-clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
     clip-path: polygon(100% 10%, 100% 90%, 0 100%, 0 0);
 }
@@ -442,13 +440,13 @@ clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 
 .map-left {
     float: left;
+    height: 100%;
+    width: 45%;
     padding-top: 7%;
     padding-left: 5%;
     padding-right: 5%;
-    width: 45%;
     color: white;
     text-align: center;
-    height: 100%;
 }
 
 .map-right {

@@ -63,12 +63,12 @@
 
             <section class="map-container">
                 <div class="map-left">
-                    <h3>Testimonial Two</h3>
+                    <h3>Where to find us</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero autem aut perspiciatis impedit tempore laboriosam quo, quidem, cupiditate rem? Soluta reprehenderit esse totam sit quis, dicta nobis ducimus quod autem!</p>
                 </div>
                 <div class="map-right" id="map">
                 </div>
-                    <div class="clear"></div>
+                <div class="clear"></div>
             </section>
 
             <!-- section three (images) -->
@@ -81,21 +81,21 @@
                     <img src="#" alt="placeholder" class="info-img-three" id="show-img">
                 </div>
             </section>
-            </div>
+        </div>
 
-            <!-- Footer Section -->
-            <footer>
+        <!-- Footer Section -->
+        <footer>
 
-                <!-- Ambush Link -->
-                <div id="left" class="footer-general">
-                    <span>
+            <!-- Ambush Link -->
+            <div id="left" class="footer-general">
+                <span>
                       Designed by:<a href="http://www.ambushdesign.co">Ambush Design Co.</a>
                    </span>
-                </div>
+            </div>
 
-                <!-- Social Media Links-->
-                <div id="right" class="footer-general">
-                    <span>
+            <!-- Social Media Links-->
+            <div id="right" class="footer-general">
+                <span>
               <a href="http://www.facebook.com">
                <div class="img-div facebook"></div>
                </a>
@@ -106,35 +106,50 @@
                <div class="img-div houze"></div>
                </a>
            </span>
-                </div>
-                <div class="clear"></div>
-            </footer>
-        </div>
+            </div>
+            <div class="clear"></div>
+        </footer>
+    </div>
 </body>
 
-    <script type="text/javascript">
-        var map;
-        function initMap() {
-            
-            var myLatLng = {lat: 43.6518574, lng: -79.3823867};
+<script type="text/javascript">
+    var map;
 
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 14,
-                center: myLatLng,
-                disableDefaultUI: true
-            });
+    function initMap() {
+        
+        var address = "Toronto, ON"
 
-            var marker = new google.maps.Marker({
-                position: "Toronto+Eaton+Center",
-                map: map,
-                title: 'Hello World!'
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: address,
+            disableDefaultUI: true
+        });
+
+        var marker = new google.maps.Marker({
+            position: address,
+            map: map,
+            title: 'Yellowtree Inc.'
+        });
+
+        var geocoder = new google.maps.Geocoder();
+
+        geocoder.geocode({
+                'address': address
+            },
+            function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    new google.maps.Marker({
+                        position: results[0].geometry.location,
+                        map: map
+                    });
+                    map.setCenter(results[0].geometry.location);
+                }
             });
-        }
-    </script>
-    
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZdXLJ5br0YYL1tQyElwNiBP8xohYkyao&callback=initMap">
-    </script>
+    }
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZdXLJ5br0YYL1tQyElwNiBP8xohYkyao&callback=initMap">
+</script>
 
 
 </html>
