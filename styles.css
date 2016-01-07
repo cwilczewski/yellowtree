@@ -456,3 +456,58 @@ footer #right a {
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 }
 
+
+/* About Page */
+
+#about-hero{
+    height: 500px;
+    background-image: url(images/hero-placeholder.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+#about-info {
+    padding-top: 120px;
+}
+
+#employees {
+    width: 100%;
+    background-color: #9b8b74;
+    -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
+}
+
+#employees h2,
+#employees p {
+    color: white;
+}
+
+.emps-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-self: center;
+}
+
+.emps {
+    margin-top: -60px;
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+.emps h3 {
+    color: white;
+    font-size: ;
+}
+
+.emps img {
+    width: 200px;
+}
+
