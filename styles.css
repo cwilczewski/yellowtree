@@ -4,6 +4,10 @@
     -webkit-backface-visibility: none; 
 }
 
+body {
+    background-color: #f0f0f0
+}
+
 .clear {
     clear: both;
 }
@@ -26,7 +30,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 9999999999999;
-    background-color: #FAFAFA;
+    background-color: #f4f4f4;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 70%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 70%);
     box-shadow: 0px 5px 5px rgba(250, 250, 250, 0.5);
@@ -49,11 +53,12 @@ nav li {
     font-size: 1.1em;
     display: inline-block;
     margin: 10px 10px;
-    transition: all 0.3s ease;
+    border-bottom: 0px solid #ffc400;
+    transition: all 0.2s ease;
 }
 
 nav li:hover {
-    border-bottom: 4px solid black;
+    border-bottom: 6px solid #ffc400;
 }
 
 nav a {
@@ -66,7 +71,6 @@ nav a {
 footer {
     position: absolute;
     width: 100%;
-    height: 50px;
     right: 0;
     left: 0;
     bottom: 0px;
@@ -343,6 +347,7 @@ footer #right a {
 #testimonial-two {
     height: 400px;
     background-color: #b9a152;
+    /*background-color: #ffc400;*/
 }
 
 #testimonial-three {
@@ -353,6 +358,8 @@ footer #right a {
 #testimonial-four {
     height: 400px;
     background-color: #b9a152;
+    /*background-color: #ffc400;*/
+    
 }
 
 .testimonial-one-right,
@@ -395,7 +402,7 @@ footer #right a {
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 }
 
-/*SHOWROOM SECTION*/
+/* Showroom Page */
 
 #showroom-hero{
     height: 500px;
@@ -406,20 +413,29 @@ footer #right a {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
 }
 
-.info-sections h2{
+.info-text-container {
     margin: 0% 20%;
-    padding-top: 120px;
-    padding-bottom: 10px;
+    padding: 120px 0px;
     color: #232323;
+}
+
+.info-sections h2{
+    padding-bottom: 10px;
     font-size: 3em;
     text-decoration: underline;
 }
 
-.info-sections p{
-    margin: 0% 20%;
-    padding-bottom: 120px;
-    color: #232323;
+.info-sections h3 {
+    font-size: 1.6em;
 }
+
+.amenitie-name {
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+}
+
 
 #size {
     background-color: #9b8b74;
@@ -441,22 +457,28 @@ footer #right a {
 .map-left {
     float: left;
     height: 100%;
-    width: 45%;
-    padding-top: 7%;
-    padding-left: 5%;
+    width: 25%;
+    padding-top: 5%;
+    padding-left: 8%;
     padding-right: 5%;
     color: white;
-    text-align: center;
+}
+
+.map-left p {
+    margin: 0;
+    padding-bottom: 5px;
 }
 
 .map-right {
-    width: 55%;
+    width: 75%;
     height: 100%;
     -webkit-clip-path: polygon(9.2% 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
 }
 
-
+.address-name {
+    font-size: 1.3em;
+}
 /* About Page */
 
 #about-hero{
@@ -466,10 +488,6 @@ footer #right a {
     background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
-}
-
-#about-info {
-    padding-top: 120px;
 }
 
 #employees {
@@ -482,7 +500,9 @@ footer #right a {
 #employees h2,
 #employees p {
     color: white;
+    margin: 0 0 25px 0;
 }
+
 
 .emps-container {
     padding-left: 5%;
@@ -494,7 +514,6 @@ footer #right a {
 }
 
 .emps {
-    margin-top: -60px;
     width: 100%; 
     height: 100%;
     display: flex;
@@ -504,7 +523,10 @@ footer #right a {
 }
 .emps h3 {
     color: white;
-    font-size: ;
+}
+
+.emps p {
+    padding: 25px;
 }
 
 .emps img {

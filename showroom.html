@@ -45,26 +45,35 @@
 
             <!-- section one -->
             <section class="info-sections" id="services">
-                <h2>Services</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, alias vero eum quos porro earum asperiores? Eos voluptate error atque porro necessitatibus maiores optio placeat, fugit sequi nesciunt nostrum iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id consequatur possimus temporibus vel sit, quia, error beatae laudantium soluta ipsa at eum dignissimos vero fuga deleniti deserunt accusantium inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias velit veniam similique commodi consectetur illum consequuntur perspiciatis deleniti quidem eos architecto, dignissimos iure consequatur totam quasi vel facere assumenda aperiam.</p>
+                <div class="info-text-container">
+                    <h2>Services</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, alias vero eum quos porro earum asperiores? Eos voluptate error atque porro necessitatibus maiores optio placeat, fugit sequi nesciunt nostrum iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id consequatur possimus temporibus vel sit, quia, error beatae laudantium soluta ipsa at eum dignissimos vero fuga deleniti deserunt accusantium inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias velit veniam similique commodi consectetur illum consequuntur perspiciatis deleniti quidem eos architecto, dignissimos iure consequatur totam quasi vel facere assumenda aperiam.</p>
+                </div>
             </section>
 
             <!-- section two -->
             <section class="info-sections" id="size">
-                <h2>Size</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, alias vero eum quos porro earum asperiores? Eos voluptate error atque porro necessitatibus maiores optio placeat, fugit sequi nesciunt nostrum iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id consequatur possimus temporibus vel sit, quia, error beatae laudantium soluta ipsa at eum dignissimos vero fuga deleniti deserunt accusantium inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias velit veniam similique commodi consectetur illum consequuntur perspiciatis deleniti quidem eos architecto, dignissimos iure consequatur totam quasi vel facere assumenda aperiam.</p>
+               <div class="info-text-container">
+                    <h2>Size</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, alias vero eum quos porro earum asperiores? Eos voluptate error atque porro necessitatibus maiores optio placeat, fugit sequi nesciunt nostrum iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id consequatur possimus temporibus vel sit, quia, error beatae laudantium soluta ipsa at eum dignissimos vero fuga deleniti deserunt accusantium inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias velit veniam similique commodi consectetur illum consequuntur perspiciatis deleniti quidem eos architecto, dignissimos iure consequatur totam quasi vel facere assumenda aperiam.</p>
+                </div>
             </section>
 
             <!-- section three -->
             <section class="info-sections" id="amenities">
-                <h2>Amenities</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, alias vero eum quos porro earum asperiores? Eos voluptate error atque porro necessitatibus maiores optio placeat, fugit sequi nesciunt nostrum iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id consequatur possimus temporibus vel sit, quia, error beatae laudantium soluta ipsa at eum dignissimos vero fuga deleniti deserunt accusantium inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias velit veniam similique commodi consectetur illum consequuntur perspiciatis deleniti quidem eos architecto, dignissimos iure consequatur totam quasi vel facere assumenda aperiam.</p>
+                <div class=info-text-container>
+                    <h2>Amenities</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, alias vero eum quos porro earum asperiores? Eos voluptate error atque porro necessitatibus maiores optio placeat, fugit sequi nesciunt nostrum iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id consequatur possimus temporibus vel sit, quia, error beatae laudantium soluta ipsa at eum dignissimos vero fuga deleniti deserunt accusantium inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias velit veniam similique commodi consectetur illum consequuntur perspiciatis deleniti quidem eos architecto, dignissimos iure consequatur totam quasi vel facere assumenda aperiam.</p>
+                </div>
             </section>
 
             <section class="map-container">
                 <div class="map-left">
                     <h3>Where to find us</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero autem aut perspiciatis impedit tempore laboriosam quo, quidem, cupiditate rem? Soluta reprehenderit esse totam sit quis, dicta nobis ducimus quod autem!</p>
+                    <p class="address-name">Yellowtree Milling</p>
+                    <p>123 Seseme Street</p>
+                    <p>Toronto, ON A1B 2C3</p>
+                    <P>Suite 203</P>
                 </div>
                 <div class="map-right" id="map">
                 </div>
@@ -117,10 +126,10 @@
 
     function initMap() {
         
-        var address = "Toronto, ON"
+        var address = "Humber College"
 
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 14,
+            zoom: 18,
             center: address,
             disableDefaultUI: true
         });
