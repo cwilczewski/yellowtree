@@ -69,25 +69,28 @@ nav a {
 /* Footer Styles */
 
 footer {
+    height: 100px;
+    width: 100%;
+    background-color: #FAFAFA;
+}
+
+.home-footer {
     position: absolute;
     width: 100%;
     right: 0;
     left: 0;
     bottom: 0px;
-    background-color: #FAFAFA;
-}
-
-.footer-general {
-    padding-top: 15px; 
 }
 
 footer #left {
     float: left;
+    transform: translateY(50%);
     margin-left: 5%;
     color: #52b9b5;
 }
 
 footer #left a {
+    margin: 0;
     color: #52b9b5;
     transition: all 0.3s ease;
 }
@@ -96,10 +99,14 @@ footer #left a:hover {
     color: #3e9a96;
 }
 
+footer h3 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
 footer #right {
     float: right;
     margin-right: 5%;
-
 }
 
 footer #right .img-div {
@@ -107,8 +114,8 @@ footer #right .img-div {
     display: inline-block;
     height: 40px;
     width: 40px;
-    margin-top: -10px;
     margin-left: 25px;
+    transform: translateY(75%);
     transition: all 0.3s ease;
 }
 
@@ -171,9 +178,9 @@ footer #right a {
 .cb-slideshow li div { 
     z-index: 1000;
     position: absolute;
-    bottom: 60px;
-    left: 30px;
-    max-width: 95%;
+    bottom: 150px;
+    left: 100px;
+    max-width: 40%;
     opacity: 0;
     color: #fff;
     -webkit-animation: titleAnimation 40s linear infinite 0s;
@@ -183,12 +190,12 @@ footer #right a {
     animation: titleAnimation 40s linear infinite 0s; 
 }
 .cb-slideshow li div h3 { 
-    font-size: 80px;
+    font-size: 60px;
     padding: 0;
     margin-bottom: 0px;
 }
 .cb-slideshow li div hr {
-    width: 50%;
+    width: 100%;
     margin-left: 0px;
     color: white;
     background-color: white;
@@ -196,10 +203,9 @@ footer #right a {
     border: 0;
 }
 .cb-slideshow li div p {
-    margin-bottom: 60px;
-    font-size: 25px;
+    margin-bottom: 24px;
+    font-size: 18px;
     padding: 0;
-    margin-right: 50%;
 }
 .cb-slideshow li:nth-child(1) span { 
     background-image: url(images/1.jpg) 
