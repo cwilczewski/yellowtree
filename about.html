@@ -3,16 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>About</title>
-    <link rel="stylesheet" href="normalize.css">
+    <meta name="keywords" content="wood, furniture, woodwork, kitchen, etc">
+    <meta name="description" content="Official dealer of Kitchen sets">
+    <meta name="author" content="Ambush Design Co., Chris Wilczewski, Shangeeth Shangeeth Aiyadurai, Tyler Nicol">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="scripts/checkAbout.js"></script>
+    <title>About</title>
 </head>
 
 <body>
     <!-- Menu Section -->
     <div id="wrapper">
-        <nav>
+        <nav id="navdetect">
             <img src="images/yellowtree_logo.png" />
             <ul>
                 <a href="index.html">
@@ -54,25 +59,25 @@
                 <!-- section two -->
                 <section class="info-sections" id="employees">
                     <div class="info-text-container">
-                    <h2>Who We Are</h2>
-                    <p>Here is just a glimps of our profession and dedicated team.</p>
-                    <div class="emps-container">
-                        <div class="emps">
-                            <img src="images/faceplace.jpg">
-                            <h3>Employee Name</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nemo asperiores deleniti, rerum voluptate optio delectus velit quos beatae repellat veniam, ea eligendi, amet et nisi perspiciatis facere harum reprehenderit!</p>
+                        <h2>Who We Are</h2>
+                        <p>Here is just a glimps of our profession and dedicated team.</p>
+                        <div class="emps-container">
+                            <div class="emps">
+                                <img src="images/faceplace.jpg">
+                                <h3>Employee Name</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nemo asperiores deleniti, rerum voluptate optio delectus velit quos beatae repellat veniam, ea eligendi, amet et nisi perspiciatis facere harum reprehenderit!</p>
+                            </div>
+                            <div class="emps">
+                                <img src="images/faceplace.jpg">
+                                <h3>Employee Name</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nemo asperiores deleniti, rerum voluptate optio delectus velit quos beatae repellat veniam, ea eligendi, amet et nisi perspiciatis facere harum reprehenderit!</p>
+                            </div>
+                            <div class="emps">
+                                <img src="images/faceplace.jpg">
+                                <h3>Employee Name</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nemo asperiores deleniti, rerum voluptate optio delectus velit quos beatae repellat veniam, ea eligendi, amet et nisi perspiciatis facere harum reprehenderit!</p>
+                            </div>
                         </div>
-                        <div class="emps">
-                            <img src="images/faceplace.jpg">
-                            <h3>Employee Name</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nemo asperiores deleniti, rerum voluptate optio delectus velit quos beatae repellat veniam, ea eligendi, amet et nisi perspiciatis facere harum reprehenderit!</p>
-                        </div>
-                        <div class="emps">
-                            <img src="images/faceplace.jpg">
-                            <h3>Employee Name</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum nemo asperiores deleniti, rerum voluptate optio delectus velit quos beatae repellat veniam, ea eligendi, amet et nisi perspiciatis facere harum reprehenderit!</p>
-                        </div>
-                    </div>
                     </div>
                 </section>
 
@@ -82,13 +87,13 @@
             <footer>
 
                 <!-- Ambush Link -->
-        <div id="left" class="footer-general">
-           <h3>Yellowtree Inc | Copyright 2015 - 2016</h3>
-            <span>
+                <div id="left" class="footer-general">
+                    <h3>Yellowtree Inc | Copyright 2015 - 2016</h3>
+                    <span>
           Designed by:
            <a href="http://www.ambushdesign.co">Ambush Design Co.</a>
            </span>
-        </div>
+                </div>
 
                 <!-- Social Media Links-->
                 <div id="right" class="footer-general">
@@ -108,5 +113,33 @@
             </footer>
         </div>
 </body>
+
+<!--  Nav Mask -->
+<svg class="clip-svg" width="0" height="0">
+    <defs>
+        <clipPath id="nav-shape" clipPathUnits="objectBoundingBox">
+            <polygon points="0 0, 1 0, 1 0.9, 0 0.7" />
+        </clipPath>
+    </defs>
+</svg>
+
+<!--  Hero Mask -->
+<svg class="clip-svg" width="0" height="0">
+    <defs>
+        <clipPath id="hero-shape" clipPathUnits="objectBoundingBox">
+            <polygon points="0 0, 1 0, 1 0.9, 0 1" />
+        </clipPath>
+    </defs>
+</svg>
+
+<!--  Size Mask -->
+<svg class="clip-svg" width="0" height="0">
+    <defs>
+        <clipPath id="emps-shape" clipPathUnits="objectBoundingBox">
+            <polygon points="0 0, 1 .05, 1 1, 0 1" />
+        </clipPath>
+    </defs>
+</svg>
+
 
 </html>

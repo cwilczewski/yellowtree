@@ -3,15 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Map</title>
-    <link rel="stylesheet" href="normalize.css">
+    <meta name="keywords" content="wood, furniture, woodwork, kitchen, etc">
+    <meta name="description" content="Official dealer of Kitchen sets">
+    <meta name="author" content="Ambush Design Co., Chris Wilczewski, Shangeeth Shangeeth Aiyadurai, Tyler Nicol">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="scripts/checkShowroom.js"></script>
+    <title>Showroom</title>
 </head>
 
 <body>
     <!-- Menu Section -->
-    <nav>
+    <nav id="navdetect">
         <img src="images/yellowtree_logo.png" />
         <ul>
             <a href="index.html">
@@ -53,7 +58,7 @@
 
             <!-- section two -->
             <section class="info-sections" id="size">
-               <div class="info-text-container">
+                <div class="info-text-container">
                     <h2>Size</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, alias vero eum quos porro earum asperiores? Eos voluptate error atque porro necessitatibus maiores optio placeat, fugit sequi nesciunt nostrum iure! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id consequatur possimus temporibus vel sit, quia, error beatae laudantium soluta ipsa at eum dignissimos vero fuga deleniti deserunt accusantium inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias velit veniam similique commodi consectetur illum consequuntur perspiciatis deleniti quidem eos architecto, dignissimos iure consequatur totam quasi vel facere assumenda aperiam.</p>
                 </div>
@@ -81,7 +86,7 @@
             </section>
 
             <!-- section three (images) -->
-<!--
+            <!--
             <section class="info-sections" id="info-images">
                 <div id="info-img-container">
                     <img src="#" alt="placeholder" class="info-img-one" id="show-img">
@@ -98,13 +103,13 @@
         <footer>
 
             <!-- Ambush Link -->
-        <div id="left" class="footer-general">
-           <h3>Yellowtree Inc | Copyright 2015 - 2016</h3>
-            <span>
+            <div id="left" class="footer-general">
+                <h3>Yellowtree Inc | Copyright 2015 - 2016</h3>
+                <span>
           Designed by:
            <a href="http://www.ambushdesign.co">Ambush Design Co.</a>
            </span>
-        </div>
+            </div>
 
             <!-- Social Media Links-->
             <div id="right" class="footer-general">
@@ -129,7 +134,7 @@
     var map;
 
     function initMap() {
-        
+
         var address = "Humber College"
 
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -163,6 +168,45 @@
 
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZdXLJ5br0YYL1tQyElwNiBP8xohYkyao&callback=initMap">
 </script>
+
+<!--  Nav Mask -->
+<svg class="clip-svg" width="0" height="0">
+    <defs>
+        <clipPath id="nav-shape" clipPathUnits="objectBoundingBox">
+            <polygon points="0 0, 1 0, 1 0.9, 0 0.7" />
+        </clipPath>
+    </defs>
+</svg>
+
+<!--  Hero Mask -->
+<svg class="clip-svg" width="0" height="0">
+    <defs>
+        <clipPath id="hero-shape" clipPathUnits="objectBoundingBox">
+            <polygon points="0 0, 1 0, 1 0.9, 0 1" />
+        </clipPath>
+    </defs>
+</svg>
+
+<!--  Size Mask -->
+<svg class="clip-svg" width="0" height="0">
+    <defs>
+        <clipPath id="size-shape" clipPathUnits="objectBoundingBox">
+            <polygon points="1 .10, 1 .90, 0 1, 0 0" />
+        </clipPath>
+    </defs>
+</svg>
+
+<!--  Map Mask -->
+<svg class="clip-svg" width="0" height="0">
+    <defs>
+        <clipPath id="map-shape" clipPathUnits="objectBoundingBox">
+            <polygon points=".092 0, 1 0, 1 1, 0 1" />
+        </clipPath>
+    </defs>
+</svg>
+
+
+
 
 
 </html>

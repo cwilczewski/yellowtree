@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="wood, furniture, woodwork, kitchen, etc">
     <meta name="description" content="Official dealer of Kitchen sets">
     <meta name="author" content="Ambush Design Co., Chris Wilczewski, Shangeeth Shangeeth Aiyadurai, Tyler Nicol">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="scripts/checkTestimonials.js"></script>
+    <title>Testimonials</title>  
 </head>
 
 <body>
     <!-- Menu Section -->
-    <nav>
+    <nav id="navdetect">
         <img src="images/yellowtree_logo.png" />
         <ul>
             <a href="index.html">
@@ -43,7 +46,7 @@
                 <h3>Testimonial One</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni id placeat velit, distinctio tempore perferendis temporibus voluptates porro! Nisi ducimus eligendi quidem quae amet. Itaque rem delectus ratione, nesciunt.</p>
             </div>
-            <img src="http://placehold.it/1500x650" alt="placeholder" class="testimonial-one-left">
+            <img src="http://placehold.it/1500x650" alt="placeholder" id="one" class="testimonial-one-left">
             <div class="clear"></div>
         </div>
 
@@ -54,7 +57,7 @@
                 <h3>Testimonial Two</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero autem aut perspiciatis impedit tempore laboriosam quo, quidem, cupiditate rem? Soluta reprehenderit esse totam sit quis, dicta nobis ducimus quod autem!</p>
             </div>
-            <img src="http://placehold.it/1500x650" alt="placeholder" class="testimonial-two-right">
+            <img src="http://placehold.it/1500x650" alt="placeholder" id="two" class="testimonial-two-right">
             <div class="clear"></div>
         </div>
 
@@ -65,7 +68,7 @@
                 <h3>Testimonial One</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni id placeat velit, distinctio tempore perferendis temporibus voluptates porro! Nisi ducimus eligendi quidem quae amet. Itaque rem delectus ratione, nesciunt.</p>
             </div>
-            <img src="http://placehold.it/1500x650" alt="placeholder" class="testimonial-three-left">
+            <img src="http://placehold.it/1500x650" alt="placeholder" id="three" class="testimonial-three-left">
             <div class="clear"></div>
         </div>
 
@@ -76,25 +79,25 @@
                 <h3>Testimonial Two</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero autem aut perspiciatis impedit tempore laboriosam quo, quidem, cupiditate rem? Soluta reprehenderit esse totam sit quis, dicta nobis ducimus quod autem!</p>
             </div>
-            <img src="http://placehold.it/1500x650" alt="placeholder" class="testimonial-four-right">
+            <img src="http://placehold.it/1500x650" alt="placeholder" id="four" class="testimonial-four-right">
             <div class="clear"></div>
         </div>
 
         <!-- Footer Section -->
-    <footer>
+        <footer>
 
-        <!-- Ambush Link -->
-        <div id="left" class="footer-general">
-           <h3>Yellowtree Inc | Copyright 2015 - 2016</h3>
-            <span>
+            <!-- Ambush Link -->
+            <div id="left" class="footer-general">
+                <h3>Yellowtree Inc | Copyright 2015 - 2016</h3>
+                <span>
           Designed by:
            <a href="http://www.ambushdesign.co">Ambush Design Co.</a>
            </span>
-        </div>
+            </div>
 
-        <!-- Social Media Links-->
-        <div id="right" class="footer-general">
-            <span>
+            <!-- Social Media Links-->
+            <div id="right" class="footer-general">
+                <span>
               <a href="http://www.facebook.com">
                <div class="img-div facebook"></div>
                </a>
@@ -105,12 +108,38 @@
                <div class="img-div houze"></div>
                </a>
            </span>
-        </div>
-        <div class="clear"></div>
-    </footer>
-
-
+            </div>
+            <div class="clear"></div>
+        </footer>
 
 </body>
+
+<!--  Nav Mask -->
+<svg class="clip-svg" width="0" height="0">
+    <defs>
+        <clipPath id="nav-shape" clipPathUnits="objectBoundingBox">
+            <polygon points="0 0, 1 0, 1 0.9, 0 0.7" />
+        </clipPath>
+    </defs>
+</svg>
+
+<!--  Testimonials Mask 1 -->
+<svg class="clip-svg" width="0" height="0">
+    <defs>
+        <clipPath id="tes-one-shape" clipPathUnits="objectBoundingBox">
+            <polygon points="0 0, 0.9 0, 1 1, 0 1" />
+        </clipPath>
+    </defs>
+</svg>
+
+<!--  Testimonials Mask 2 -->
+<svg class="clip-svg" width="0" height="0">
+    <defs>
+        <clipPath id="tes-two-shape" clipPathUnits="objectBoundingBox">
+            <polygon points=".092 0, 1 0, 1 1, 0 1" />
+        </clipPath>
+    </defs>
+</svg>
+
 
 </html>
