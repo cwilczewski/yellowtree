@@ -6,7 +6,7 @@ $(document).ready(function () {
 
 
     } else if (sUsrAg.indexOf("Safari") > -1) {
-
+        document.getElementById("map").style.clipPath = "url('#map-shape')";
 
     } else if (sUsrAg.indexOf("Opera") > -1) {
 
