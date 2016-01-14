@@ -74,6 +74,7 @@ nav a {
 
 #menu {
     position: absolute;
+    z-index: -1;
     right: 50px;
     margin-right: 10px;
     font-size: 1.6em;
@@ -81,14 +82,14 @@ nav a {
 }
 
 #mobile ul {
-    position: relative;
+    position: absolute;
     z-index: 99999999;
     height: 100vh;
     width: 700px;
-    background: #f4f4f4;
-    top: 0;
-    left: 0;
-    visibility: hidden; /*Change this to like see the shit*/
+    background: #f2f2f2;
+    top: -16px;
+    right: 0;
+/*    visibility: hidden; Change this to like see the shit*/
     margin-right: 0;
     padding-left: 180px;
     -webkit-clip-path: polygon(25% 0, 100% 0%, 100% 100%, 0% 100%);
@@ -97,7 +98,7 @@ nav a {
 
 #mobile ul p {
     position: absolute;
-    margin-top: 0px;
+    margin-top: 26px;
     margin-bottom: 150px;
     right: 50px;
     font-size: 1.6em;
@@ -108,7 +109,7 @@ nav a {
     font-size: 2em;
     display: block;
     top: 150px;
-    right: -130px;
+    right: -200px;
     margin-top: 50px;
 }
 
