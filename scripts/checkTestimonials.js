@@ -20,8 +20,25 @@ $(document).ready(function () {
         document.getElementById("three").style.clipPath = "url('#tes-one-shape')";
         document.getElementById("four").style.clipPath = "url('#tes-two-shape')";
 
-    } else if (sUsrAg.indexOf("MSIE") > -1) {
-
-
+    } else if (sUsrAg.indexOf("Trident/") > -1) { //IE11
+        //nav
+        document.getElementById("navdetect").style.height = "80px";
+        document.getElementById("two").style.width = "50%";
+        document.getElementById("four").style.width = "50%";
+        document.getElementById("text-one").style.width = "50%";
+        document.getElementById("text-two").style.width = "50%";
+        document.getElementById("text-three").style.width = "50%";
+        document.getElementById("text-four").style.width = "50%";
+    }
+    
+    var edge = sUsrAg.indexOf('Edge/');//...Edge
+    if (edge > 0) {
+        document.getElementById("navdetect").style.height = "80px";
+        document.getElementById("two").style.width = "50%";
+        document.getElementById("four").style.width = "50%";
+        document.getElementById("text-one").style.width = "50%";
+        document.getElementById("text-two").style.width = "50%";
+        document.getElementById("text-three").style.width = "50%";
+        document.getElementById("text-four").style.width = "50%";
     }
 })

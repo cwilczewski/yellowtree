@@ -18,8 +18,13 @@ $(document).ready(function () {
         document.getElementById("about-hero").style.clipPath = "url('#hero-shape')";
         document.getElementById("employees").style.clipPath = "url('#emps-shape')";
         
-    } else if (sUsrAg.indexOf("MSIE") > -1) {
-
-
+} else if (sUsrAg.indexOf("Trident/") > -1) { //IE11
+        //nav
+        document.getElementById("navdetect").style.height = "80px";
+    }
+    
+    var edge = sUsrAg.indexOf('Edge/');//...Edge
+    if (edge > 0) {
+        document.getElementById("navdetect").style.height = "80px";
     }
 })

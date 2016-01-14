@@ -14,9 +14,14 @@ $(document).ready(function () {
     } else if (sUsrAg.indexOf("Firefox") > -1) {
         //nav
         document.getElementById("navdetect").style.clipPath = "url('#nav-shape')";
-
-    } else if (sUsrAg.indexOf("MSIE") > -1) {
-
-
+        
+    } else if (sUsrAg.indexOf("Trident/") > -1) { //IE11
+        //nav
+        document.getElementById("navdetect").style.height = "80px";
+    }
+    
+    var edge = sUsrAg.indexOf('Edge/');//...Edge
+    if (edge > 0) {
+        document.getElementById("navdetect").style.height = "80px";
     }
 })

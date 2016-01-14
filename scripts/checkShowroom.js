@@ -19,8 +19,13 @@ $(document).ready(function () {
         document.getElementById("size").style.clipPath = "url('#size-shape')";
         document.getElementById("map").style.clipPath = "url('#map-shape')";
 
-    } else if (sUsrAg.indexOf("MSIE") > -1) {
-
-
+    } else if (sUsrAg.indexOf("Trident/") > -1) { //IE11
+        //nav
+        document.getElementById("navdetect").style.height = "80px";
+    }
+    
+    var edge = sUsrAg.indexOf('Edge/');//...Edge
+    if (edge > 0) {
+        document.getElementById("navdetect").style.height = "80px";
     }
 })
