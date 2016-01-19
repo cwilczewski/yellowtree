@@ -14,8 +14,11 @@ $(document).ready(function () {
     } else if (sUsrAg.indexOf("Firefox") > -1) {
         //nav
         document.getElementById("navdetect").style.clipPath = "url('#nav-shape')";
+        //showroom
+        document.getElementById("sontact-hero").style.clipPath = "url('#hero-shape')";
+        document.getElementById("something").style.clipPath = "url('#emps-shape')";
         
-    } else if (sUsrAg.indexOf("Trident/") > -1) { //IE11
+} else if (sUsrAg.indexOf("Trident/") > -1) { //IE11
         //nav
         document.getElementById("navdetect").style.height = "80px";
     }
@@ -23,14 +26,5 @@ $(document).ready(function () {
     var edge = sUsrAg.indexOf('Edge/');//...Edge
     if (edge > 0) {
         document.getElementById("navdetect").style.height = "80px";
-    };
-    
-    
-   $('#menu').on('click', function(){
-        document.getElementById("slide").style.transform = ("translateX(0%)");
-    });
-    
-    $('#close').on('click', function(){
-        document.getElementById("slide").style.transform = ("translateX(100%)");
-    });
-});
+    }
+})

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="styles/jquery.fancybox.css" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="scripts/checkTestimonials.js"></script>
-    <title>Testimonials</title>  
+    <title>Testimonials</title>
 </head>
 
 <body>
@@ -38,6 +39,30 @@
         <div class="clear"></div>
     </nav>
 
+    <!--    Mobile Nav-->
+    <nav id="mobile">
+        <img src="images/yellowtree_logo.png" />
+        <p id="menu">Menu</p>
+        <ul id="slide">
+            <p id="close">Close x</p>
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="testimontials.html">
+                <li>Testimonials</li>
+            </a>
+            <a href="showroom.html">
+                <li>Showroom</li>
+            </a>
+            <a href="about.html">
+                <li>About</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+    </nav>
+
     <div id="page-container">
         <!--FIRST TESTIMONIAL-->
 
@@ -46,7 +71,11 @@
                 <h3>Testimonial One</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni id placeat velit, distinctio tempore perferendis temporibus voluptates porro! Nisi ducimus eligendi quidem quae amet. Itaque rem delectus ratione, nesciunt.</p>
             </div>
-            <img src="http://placehold.it/1500x650" alt="placeholder" id="one" class="testimonial-one-left">
+            <a class="fancybox" href="images/Testinomials/1.png">
+                <img src="http://placehold.it/1500x650" alt="placeholder" id="one" class="testimonial-one-left"></a>
+            <div class="hidden-img">
+                <a class="fancybox" href="images/Testinomials/2.png"><img src="images/Testinomials/2.png"></a>
+            </div>
             <div class="clear"></div>
         </div>
 
@@ -57,7 +86,11 @@
                 <h3>Testimonial Two</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero autem aut perspiciatis impedit tempore laboriosam quo, quidem, cupiditate rem? Soluta reprehenderit esse totam sit quis, dicta nobis ducimus quod autem!</p>
             </div>
-            <img src="http://placehold.it/1500x650" alt="placeholder" id="two" class="testimonial-two-right">
+            <a class="fancybox2" href="images/Testinomials/1.png">
+                <img src="http://placehold.it/1500x650" alt="placeholder" id="two" class="testimonial-two-right"></a>
+            <div class="hidden-img">
+                <a class="fancybox2" href="images/Testinomials/2.png"><img src="images/Testinomials/2.png"></a>
+            </div>
             <div class="clear"></div>
         </div>
 
@@ -68,7 +101,11 @@
                 <h3>Testimonial One</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque magni id placeat velit, distinctio tempore perferendis temporibus voluptates porro! Nisi ducimus eligendi quidem quae amet. Itaque rem delectus ratione, nesciunt.</p>
             </div>
-            <img src="http://placehold.it/1500x650" alt="placeholder" id="three" class="testimonial-three-left">
+            <a class="fancybox3" href="images/Testinomials/1.png">
+                <img src="http://placehold.it/1500x650" alt="placeholder" id="three" class="testimonial-three-left"></a>
+            <div class="hidden-img">
+                <a class="fancybox3" href="images/Testinomials/2.png"><img src="images/Testinomials/2.png"></a>
+            </div>
             <div class="clear"></div>
         </div>
 
@@ -79,7 +116,11 @@
                 <h3>Testimonial Two</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero autem aut perspiciatis impedit tempore laboriosam quo, quidem, cupiditate rem? Soluta reprehenderit esse totam sit quis, dicta nobis ducimus quod autem!</p>
             </div>
-            <img src="http://placehold.it/1500x650" alt="placeholder" id="four" class="testimonial-four-right">
+            <a class="fancybox4" href="images/Testinomials/1.png">
+                <img src="http://placehold.it/1500x650" alt="placeholder" id="four" class="testimonial-four-right"></a>
+            <div class="hidden-img">
+                <a class="fancybox4" href="images/Testinomials/2.png"><img src="images/Testinomials/2.png"></a>
+            </div>
             <div class="clear"></div>
         </div>
 
@@ -111,6 +152,11 @@
             </div>
             <div class="clear"></div>
         </footer>
+    </div>
+
+    <script src="scripts/jquery.fancybox.js"></script>
+    <script src="scripts/fancy.js"></script>
+    <script src="scripts/jquery.fancybox.pack.js"></script>
 
 </body>
 

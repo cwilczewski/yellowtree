@@ -10,14 +10,14 @@
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/styles.css">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="scripts/check.js"></script>
+    <script src="scripts/checkContact.js"></script>
     <title>Contact</title>
 </head>
 
 <body>
     <div id="wrapper">
         <!-- Menu Section -->
-        <nav>
+        <nav id="navdetect">
             <img src="images/yellowtree_logo.png" />
             <ul>
                 <a href="index.html">
@@ -39,51 +39,95 @@
             <div class="clear"></div>
         </nav>
 
-        <!-- contact area start -->
-        <div id="contact-container">
+        <!--    Mobile Nav-->
+        <nav id="mobile">
+            <img src="images/yellowtree_logo.png" />
+            <p id="menu">Menu</p>
+            <ul id="slide">
+                <p id="close">Close x</p>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="testimontials.html">
+                    <li>Testimonials</li>
+                </a>
+                <a href="showroom.html">
+                    <li>Showroom</li>
+                </a>
+                <a href="about.html">
+                    <li>About</li>
+                </a>
+                <a href="contact.html">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </nav>
 
-            <!-- map as header -->
-            <div id="map">
-                google map goes here
+        <!-- contact container -->
+        <div id="page-container">
+
+            <!-- contact hero -->
+            <div id="contact-hero">
+                <h1>Contact Us</h1>
             </div>
 
-            <!-- form -->
-            <div id="contact-form">
-                <h2>Email Us</h2>
-                <form method="post" action="MAILTO:c.wilczewski@gmail.com" id="contform">
-                    <input type="text" name="fname" id="first-name" placeholder="first name" required>
-                    <input type="text" name="lname" id="last-name" placeholder="last name" required>
-                    <input type="email" name="email" id="email-field" placeholder="email" required>
-                    <input type="tel" name="phonenum" id="phone-number" placeholder="phone number" required>
+            <!-- main content area -->
+            <div id="info-container">
 
-                    <textarea name="formtext" id="form-text" form="contform" placeholder="enter message..." required>
+                <!-- section one -->
+                <section class="info-sections" id="form-info">
+                    <div class="info-text-container">
+                       <p>Hold on, most of your questions can be solved by reading this handy guide we made. "DL Link Goes Here"</p>
+                        <form method="post" id="contform">
+                            <div id="form-top">
+                                <input type="text" name="fname" id="first-name" placeholder="first name" required>
+                                <input type="text" name="lname" id="last-name" placeholder="last name" required>
+                            </div>
+                            <div id="form-bottom">
+                                <input type="email" name="email" id="email-field" placeholder="email" required>
+                                <input type="tel" name="phonenum" id="phone-number" placeholder="phone number" required>
+                            </div>
 
-                    </textarea>
+                            <textarea name="formtext" id="form-text" form="contform" placeholder="enter message..." required>
 
-                    optional, attach image:
-                    <input type="file" name="attachfile" id="attach">
+                            </textarea>
+                            
+                            <div id="attach">
+                            optional, attach image: <br/>
+                            <input type="file" name="attachfile" id="attach">
+                            </div>
+                            
+                            <div id="btn">
+                            <input type="submit" onclick="alert('check ur email chris')">
+                            </div>
+                        </form>
+                    </div>
+                </section>
 
-                    <input type="submit" onclick="alert('check ur email chris')">
-                </form>
+                <!-- section two -->
+                <section class="info-sections" id="something">
+                    <div class="info-text-container">
+                        <p>social links</p>
+                    </div>
+                </section>
+
             </div>
 
-        </div>
+            <!-- Footer Section -->
+            <footer>
 
-        <!-- Footer Section -->
-        <footer>
-
-            <!-- Ambush Link -->
-            <div id="left" class="footer-general">
-                <h3>Yellowtree Inc | Copyright 2015 - 2016</h3>
-                <span>
+                <!-- Ambush Link -->
+                <div id="left" class="footer-general">
+                    <h3>Yellowtree Inc | Copyright 2015 - 2016</h3>
+                    <span>
           Designed by:
            <a href="http://www.ambushdesign.co">Ambush Design Co.</a>
            </span>
-            </div>
+                </div>
 
-            <!-- Social Media Links-->
-            <div id="right" class="footer-general">
-                <span>
+                <!-- Social Media Links-->
+                <div id="right" class="footer-general">
+                    <span>
               <a href="http://www.facebook.com">
                <div class="img-div facebook"></div>
                </a>
@@ -94,10 +138,38 @@
                <div class="img-div houze"></div>
                </a>
            </span>
-            </div>
-            <div class="clear"></div>
-        </footer>
-
+                </div>
+                <div class="clear"></div>
+            </footer>
+        </div>
 </body>
+
+<!--  Nav Mask -->
+<svg class="clip-svg" width="0" height="0">
+    <defs>
+        <clipPath id="nav-shape" clipPathUnits="objectBoundingBox">
+            <polygon points="0 0, 1 0, 1 0.9, 0 0.7" />
+        </clipPath>
+    </defs>
+</svg>
+
+<!--  Hero Mask -->
+<svg class="clip-svg" width="0" height="0">
+    <defs>
+        <clipPath id="hero-shape" clipPathUnits="objectBoundingBox">
+            <polygon points="0 0, 1 0, 1 0.9, 0 1" />
+        </clipPath>
+    </defs>
+</svg>
+
+<!--  Size Mask -->
+<svg class="clip-svg" width="0" height="0">
+    <defs>
+        <clipPath id="emps-shape" clipPathUnits="objectBoundingBox">
+            <polygon points="0 0, 1 .05, 1 1, 0 1" />
+        </clipPath>
+    </defs>
+</svg>
+
 
 </html>
