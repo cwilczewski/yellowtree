@@ -72,50 +72,35 @@
             </div>
 
             <!-- main content area -->
-            <div id="info-container">
-
-                <!-- section one -->
-                <section class="info-sections" id="form-info">
-                    <div class="info-text-container">
-                       <p>Hold on, most of your questions can be solved by reading this handy guide we made. "DL Link Goes Here"</p>
-                        <form method="post" id="contform">
-                            <div id="form-top">
-                                <input type="text" name="fname" id="first-name" placeholder="first name" required>
-                                <input type="text" name="lname" id="last-name" placeholder="last name" required>
-                            </div>
-                            <div id="form-bottom">
-                                <input type="email" name="email" id="email-field" placeholder="email" required>
-                                <input type="tel" name="phonenum" id="phone-number" placeholder="phone number" required>
-                            </div>
-
-                            <textarea name="formtext" id="form-text" form="contform" placeholder="enter message..." required>
-
-                            </textarea>
-                            
-                            <div id="attach">
-                            optional, attach image: <br/>
-                            <input type="file" name="attachfile" id="attach">
-                            </div>
-                            
-                            <div id="btn">
-                            <input type="submit" onclick="alert('check ur email chris')">
-                            </div>
-                        </form>
+            <!-- section one -->
+            <section class="info-sections">
+                <form method="post" id="contform">
+                    <p class="cont-header">Hold on, most of your questions can be solved by reading this handy guide we made. "DL Link Goes Here"</p>
+                    <div id="form-top">
+                        <input type="text" name="fname" id="first-name" placeholder="first name" required>
+                        <input type="text" name="lname" id="last-name" placeholder="last name" required>
                     </div>
-                </section>
-
-                <!-- section two -->
-                <section class="info-sections" id="something">
-                    <div class="info-text-container">
-                        <p>social links</p>
+                    <div id="form-bottom">
+                        <input type="email" name="email" id="email-field" placeholder="email" required>
+                        <input type="tel" name="phonenum" id="phone-number" placeholder="phone number" required>
                     </div>
-                </section>
 
-            </div>
+                    <textarea name="formtext" id="form-text" form="contform" placeholder="enter message..." required>
 
+                    </textarea>
+
+                    <div class="attach-div">
+                        <p class="attach-text">optional, attach image:</p>
+                        <input type="file" name="attachfile" id="attach">
+                    </div>
+
+                    <div id="btn">
+                        <input type="submit" onclick="alert('check ur email chris')">
+                    </div>
+                </form>
+            </section>
             <!-- Footer Section -->
             <footer>
-
                 <!-- Ambush Link -->
                 <div id="left" class="footer-general">
                     <h3>Yellowtree Inc | Copyright 2015 - 2016</h3>
@@ -132,7 +117,7 @@
                <div class="img-div facebook"></div>
                </a>
                <a href="http://www.instagram.com">
-               <div class="img-div instagram"></div>
+                   <div class="img-div instagram"></div>
                </a>
                <a href="http://www.houzz.com">
                <div class="img-div houze"></div>
@@ -142,6 +127,7 @@
                 <div class="clear"></div>
             </footer>
         </div>
+    </div>
 </body>
 
 <!--  Nav Mask -->
