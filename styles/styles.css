@@ -902,6 +902,7 @@ input[type="submit"]:hover {
         width: 100%;
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: url() !important;
     }
     .testimonial-two-right,
     .testimonial-four-right {
@@ -909,5 +910,6 @@ input[type="submit"]:hover {
         width: 100%;
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
         clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: url() !important;
     }
 }
