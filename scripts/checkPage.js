@@ -57,6 +57,13 @@ $(document).ready(function () {
             document.getElementById("text-three").style.width = "50%";
             document.getElementById("text-four").style.width = "50%";
         }
+                $('#menu').on('click', function () {
+            document.getElementById("slide").style.transform = ("translateX(0%)");
+        });
+
+        $('#close').on('click', function () {
+            document.getElementById("slide").style.transform = ("translateX(100%)");
+        });
     } else if (page == "about") {
         if (sUsrAg.indexOf("Firefox") > -1) {
             //nav
@@ -74,6 +81,13 @@ $(document).ready(function () {
         if (edge > 0) {
             document.getElementById("navdetect").style.height = "80px";
         }
+                $('#menu').on('click', function () {
+            document.getElementById("slide").style.transform = ("translateX(0%)");
+        });
+
+        $('#close').on('click', function () {
+            document.getElementById("slide").style.transform = ("translateX(100%)");
+        });
     } else if (page == "showroom") {
         if (sUsrAg.indexOf("Firefox") > -1) {
             //nav
@@ -109,5 +123,12 @@ $(document).ready(function () {
         if (edge > 0) {
             document.getElementById("navdetect").style.height = "80px";
         }
+                $('#menu').on('click', function () {
+            document.getElementById("slide").style.transform = ("translateX(0%)");
+        });
+
+        $('#close').on('click', function () {
+            document.getElementById("slide").style.transform = ("translateX(100%)");
+        });
     }
 });
