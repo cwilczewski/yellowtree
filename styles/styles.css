@@ -711,17 +711,17 @@ footer #right a {
 }
 
 .emps-container {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 50px;
 }
 
 .emps {
     display: inline-block;
-    width: 30%;
+    width: 25%;
     height: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-right: 35px;
+    margin-left: 35px;
 }
 
 .emps h3 {
