@@ -924,4 +924,20 @@ input[type="submit"]:hover {
     .cb-slideshow li div {
         left: 50px;
         max-width: 80%;
+    }
+    
+footer {
+    height: 150px;
+    }
+    footer #right {
+    float: none;
+        margin-left: 30%;
+            margin-top: 20px;
+        padding-bottom: 15px;
+        
+    }
+    footer #left {
+        float: none;
+        text-align: center;
+    }
 }
