@@ -147,8 +147,8 @@ footer {
 
 footer #left {
     float: left;
-    transform: translateY(50%);
-    -webkit-transform: translateY(50%);
+    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
     margin-left: 5%;
     color: #52b9b5;
 }
@@ -974,16 +974,42 @@ input[type="submit"]:hover {
         margin-bottom: 10px;
     }
     footer {
-        height: 150px;
+        height: 90px;
     }
     footer #right {
         float: none;
-        margin-left: 30%;
-        margin-top: 20px;
-        padding-bottom: 15px;
+       text-align: center;
+        margin-top: 10px;
     }
     footer #left {
         float: none;
+        transform: translateY(30%);
+    -webkit-transform: translateY(30%); 
         text-align: center;
+        margin: 0;
+        font-size: .7em;
+    }
+    footer #right .img-div {
+    background-size: cover;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-left: 25px;
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    transition: all 0.3s ease;
+}
+    .cb-slideshow li div {
+        bottom: 90px;
+        left: 20px;
+        transition: all 0.3s ease;
+    }
+    .cb-slideshow li div h3 {
+        font-size: 50px;
+        transition: all 0.3s ease;
+    }
+    .cb-slideshow li div p {
+        font-size: 17px;
+        transition: all 0.3s ease;
     }
 }
