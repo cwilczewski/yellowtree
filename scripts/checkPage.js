@@ -107,7 +107,7 @@ $(document).ready(function () {
             document.getElementById("navdetect").style.clipPath = "url('#nav-shape')";
             //showroom
             document.getElementById("sontact-hero").style.clipPath = "url('#hero-shape')";
-            document.getElementById("something").style.clipPath = "url('#emps-shape')";
+            document.getElementById("something").style.clipPath = "url('#pintrest-shape')";
 
         } else if (sUsrAg.indexOf("Trident/") > -1) { //IE11
             //nav
