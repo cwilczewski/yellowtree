@@ -4,11 +4,11 @@ $(document).ready(function () {
     var sBrowser, sUsrAg = navigator.userAgent;
     
     
-        $('#menu').on('click', function () {
+        $('#menu').on('touchstart click', function () {
             document.getElementById("slide").style.transform = ("translateX(0%)");
         });
 
-        $('#close').on('click', function () {
+        $('#close').on('touchstart click', function () {
             document.getElementById("slide").style.transform = ("translateX(100%)");
         });
     
