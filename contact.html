@@ -13,6 +13,7 @@
     <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script>
         var page = "contact"
+
     </script>
     <script src="scripts/checkPage.js"></script>
     <title>Contact</title>
@@ -22,7 +23,7 @@
     <div id="wrapper">
         <!-- Menu Section -->
         <nav id="navdetect">
-            <img src="images/yellowtree_logo.png" />
+            <img src="images/logo.png" alt="yellowtree-logo"/>
             <ul>
                 <a href="index.html">
                     <li>Home</li>
@@ -44,28 +45,28 @@
         </nav>
 
         <!--    Mobile Nav-->
-    <nav id="mobile">
-        <img src="images/yellowtree_logo.png" />
-        <p id="menu">Menu</p>
-        <ul id="slide">
-            <p id="close">Close x</p>
-            <li>
-            <a href="index.html">Home</a>
-            </li>
-            <li>
-            <a href="testimontials.html">Testimonials</a>
-            </li>
-            <li>
-            <a href="showroom.html">Showroom</a>
-            </li>
-            <li>
-            <a href="about.html">About</a>
-            </li>
-            <li>
-            <a href="contact.html" id="active-mobile">Contact</a>
-            </li>
-        </ul>
-    </nav>
+        <nav id="mobile">
+            <img src="images/logo.png" alt="yellowtree-logo"/>
+            <p id="menu">Menu</p>
+            <ul id="slide">
+                <p id="close">Close x</p>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="testimontials.html">Testimonials</a>
+                </li>
+                <li>
+                    <a href="showroom.html">Showroom</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html" id="active-mobile">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
         <!-- contact container -->
         <div id="page-container">
@@ -76,13 +77,13 @@
             </div>
 
             <!-- main content area -->
-            
-            
-            
+
+
+
             <!-- section one -->
             <section class="info-sections">
-                <form method="post" id="contform">
-                    <p class="cont-header">Hold on, most of your questions can be solved by reading this handy guide we made. "DL Link Goes Here"</p>
+                <form name="contactform" method="post" id="contform" action="send_form_email.php">
+                    <p class="cont-header">Hold on, most of your questions can be solved by reading this handy guide we made. <a href="Steps%20To%20Renovate%20Your%20Kitchen.pdf">Steps to Renovating</a></p>
                     <div id="form-top">
                         <input type="text" name="fname" id="first-name" placeholder="first name" required>
                         <input type="text" name="lname" id="last-name" placeholder="last name" required>
@@ -92,26 +93,19 @@
                         <input type="tel" name="phonenum" id="phone-number" placeholder="phone number" required>
                     </div>
 
-                    <textarea name="formtext" id="form-text" form="contform" placeholder="enter message..." required>
-
-                    </textarea>
-
-                    <div class="attach-div">
-                        <p class="attach-text">optional, attach image:</p>
-                        <input type="file" name="attachfile" id="attach">
-                    </div>
+                    <textarea name="formtext" id="form-text" form="contform" placeholder="enter message..." required></textarea>
 
                     <div id="btn">
-                        <input type="submit" onclick="alert('check ur email chris')">
+                        <input type="submit" name="submit">
                     </div>
                 </form>
             </section>
-            
+
             <section class="info-sections">
                 <div id="pintrest">
                     <h2>While you wait for us to get back to you why not check out our Pintrest page to get inspired!</h2>
-                    <a id="pintrest-link" href="http://www.pintrest.com">
-                    <img src="images/Contact/pintrest.svg" alt="pintrest">
+                    <a id="pintrest-link" href="https://www.pinterest.com/mariosurma/kitchens/">
+                        <img src="images/Contact/pintrest.svg" alt="pintrest">
                     </a>
                 </div>
             </section>
@@ -125,11 +119,11 @@
                 <!-- Social Media Links-->
                 <div id="right" class="footer-general">
                     <span>
-              <a href="http://www.facebook.com">
+              <a href="https://www.facebook.com/yellowtreeinc">
                <div class="img-div facebook"></div>
                </a>
-               <a href="http://www.instagram.com">
-                   <div class="img-div instagram"></div>
+               <a href="http://instagram.com/yellowtreeinc">
+               <div class="img-div instagram"></div>
                </a>
                <a href="http://www.houzz.com">
                <div class="img-div houze"></div>
